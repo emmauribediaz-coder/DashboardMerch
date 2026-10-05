@@ -286,7 +286,7 @@
       </div>
     </div>
     <div class="route-tag" id="routeTag">
-      PERIODO&nbsp; <b id="tagPeriod">03 ABR — 12 SEP 2026</b><br>
+      PERIODO&nbsp; <b id="tagPeriod">03 ABR — 03 OCT 2026</b><br>
       SEDES&nbsp; <b id="tagLocCount">6</b> activas de venta<br>
       ITEMS&nbsp; <b>9</b> referencias de merch
     </div>
@@ -316,6 +316,7 @@
         <button class="preset-chip" data-preset="2026-07">Jul</button>
         <button class="preset-chip" data-preset="2026-08">Ago</button>
         <button class="preset-chip" data-preset="2026-09">Sep</button>
+        <button class="preset-chip" data-preset="2026-10">Oct</button>
       </div>
     </div>
   </div>
@@ -389,22 +390,24 @@ const DAILY = [
 {"Location Name":"Viajero Bogota","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-08-11","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-08-21","SalesCount":3,"SalesTotal":254621.85,"GrossSales":254621.85},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-09-05","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
+{"Location Name":"Viajero Bogota","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-09-27","SalesCount":1,"SalesTotal":84873.95,"GrossSales":67410.92},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Gorra Velmost","Date":"2026-04-14","SalesCount":1,"SalesTotal":47899.16,"GrossSales":38319.33},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Gorra Velmost","Date":"2026-07-07","SalesCount":1,"SalesTotal":47899.16,"GrossSales":47899.16},
+{"Location Name":"Viajero Bogota","Menu Item Name":"Gorra Velmost","Date":"2026-09-29","SalesCount":1,"SalesTotal":47899.16,"GrossSales":43166.98},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Hoodie Velmost","Date":"2026-07-25","SalesCount":1,"SalesTotal":159663.87,"GrossSales":159663.87},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Hoodie Velmost","Date":"2026-07-30","SalesCount":1,"SalesTotal":159663.87,"GrossSales":159663.87},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Hoodie Velmost","Date":"2026-08-19","SalesCount":1,"SalesTotal":159663.87,"GrossSales":159663.87},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Hoodie Velmost","Date":"2026-08-25","SalesCount":1,"SalesTotal":159663.87,"GrossSales":159663.87},
+{"Location Name":"Viajero Bogota","Menu Item Name":"Hoodie Velmost","Date":"2026-10-03","SalesCount":1,"SalesTotal":159663.87,"GrossSales":159663.87},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Toalla Velmost","Date":"2026-04-29","SalesCount":1,"SalesTotal":56302.52,"GrossSales":56302.52},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Toalla Velmost","Date":"2026-05-21","SalesCount":1,"SalesTotal":56302.52,"GrossSales":56302.52},
 {"Location Name":"Viajero Bogota","Menu Item Name":"Toalla Velmost","Date":"2026-07-29","SalesCount":1,"SalesTotal":56302.52,"GrossSales":56302.52},
 {"Location Name":"Viajero Cali","Menu Item Name":"Buckethat Velmost","Date":"2026-08-02","SalesCount":1,"SalesTotal":44537.82,"GrossSales":44537.82},
 {"Location Name":"Viajero Cali","Menu Item Name":"Buckethat Velmost","Date":"2026-08-18","SalesCount":1,"SalesTotal":44537.82,"GrossSales":44537.82},
-{"Location Name":"Viajero Cali","Menu Item Name":"Buckethat Velmost","Date":"2026-09-17","SalesCount":1,"SalesTotal":44537.82,"GrossSales":44537.82},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-05-10","SalesCount":1,"SalesTotal":81512.61,"GrossSales":81512.61},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-05-15","SalesCount":1,"SalesTotal":81512.61,"GrossSales":81512.61},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-05-17","SalesCount":1,"SalesTotal":81512.61,"GrossSales":81512.61},
-{"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-05-25","SalesCount":0,"SalesTotal":0,"GrossSales":0},
+{"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-05-25","SalesCount":0,"SalesTotal":0.0,"GrossSales":0.0},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-07-07","SalesCount":1,"SalesTotal":81512.61,"GrossSales":81512.61},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-07-17","SalesCount":1,"SalesTotal":81512.61,"GrossSales":81512.61},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-08-03","SalesCount":1,"SalesTotal":81512.61,"GrossSales":81512.61},
@@ -412,14 +415,13 @@ const DAILY = [
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-08-21","SalesCount":1,"SalesTotal":81512.61,"GrossSales":65210.09},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-08-22","SalesCount":1,"SalesTotal":81512.61,"GrossSales":81512.61},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-09-15","SalesCount":1,"SalesTotal":81512.61,"GrossSales":81512.61},
-{"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Delgada Velmost","Date":"2026-09-17","SalesCount":1,"SalesTotal":81512.61,"GrossSales":81512.61},
-{"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-05-25","SalesCount":0,"SalesTotal":0,"GrossSales":0},
+{"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-05-25","SalesCount":0,"SalesTotal":0.0,"GrossSales":0.0},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-04-19","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-04-26","SalesCount":2,"SalesTotal":169747.9,"GrossSales":169747.9},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-04-29","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-05-02","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-05-23","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
-{"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-05-25","SalesCount":0,"SalesTotal":0,"GrossSales":0},
+{"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-05-25","SalesCount":0,"SalesTotal":0.0,"GrossSales":0.0},
 {"Location Name":"Viajero Cali","Menu Item Name":"Camiseta Sisa Velmost","Date":"2026-06-09","SalesCount":1,"SalesTotal":79831.93,"GrossSales":79831.93},
 {"Location Name":"Viajero Cali","Menu Item Name":"Gorra Velmost","Date":"2026-08-22","SalesCount":1,"SalesTotal":47899.16,"GrossSales":47899.16},
 {"Location Name":"Viajero Cali","Menu Item Name":"Gorra Velmost","Date":"2026-08-24","SalesCount":1,"SalesTotal":47899.16,"GrossSales":47899.16},
@@ -451,16 +453,17 @@ const DAILY = [
 {"Location Name":"Viajero Getsemani","Menu Item Name":"Toalla Velmost","Date":"2026-07-13","SalesCount":1,"SalesTotal":56302.52,"GrossSales":56302.52},
 {"Location Name":"Viajero Getsemani","Menu Item Name":"Toalla Velmost","Date":"2026-07-27","SalesCount":1,"SalesTotal":56302.52,"GrossSales":56302.52},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Buckethat","Date":"2026-04-21","SalesCount":1,"SalesTotal":44537.82,"GrossSales":44537.82},
-{"Location Name":"Viajero Guatape","Menu Item Name":"Buckethat Velmost","Date":"2026-06-10","SalesCount":-1,"SalesTotal":-53000,"GrossSales":-53000},
-{"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-04-09","SalesCount":2,"SalesTotal":191596.64,"GrossSales":0},
+{"Location Name":"Viajero Guatape","Menu Item Name":"Buckethat Velmost","Date":"2026-06-10","SalesCount":-1,"SalesTotal":-53000.0,"GrossSales":-53000.0},
+{"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-04-09","SalesCount":2,"SalesTotal":191596.64,"GrossSales":0.0},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-04-21","SalesCount":1,"SalesTotal":95798.32,"GrossSales":95798.32},
-{"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-06-10","SalesCount":-1,"SalesTotal":-114000,"GrossSales":-114000},
+{"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-06-10","SalesCount":-1,"SalesTotal":-114000.0,"GrossSales":-114000.0},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-08-14","SalesCount":1,"SalesTotal":95798.32,"GrossSales":95798.32},
+{"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-09-22","SalesCount":1,"SalesTotal":95798.32,"GrossSales":95798.32},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-04-15","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-04-21","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-05-15","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-06-06","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
-{"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-06-10","SalesCount":-1,"SalesTotal":-101000,"GrossSales":-101000},
+{"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-06-10","SalesCount":-1,"SalesTotal":-101000.0,"GrossSales":-101000.0},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-08-14","SalesCount":2,"SalesTotal":169747.9,"GrossSales":169747.9},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-08-21","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Camiseta Sisa Velmost","Date":"2026-04-21","SalesCount":1,"SalesTotal":79831.93,"GrossSales":79831.93},
@@ -468,7 +471,7 @@ const DAILY = [
 {"Location Name":"Viajero Guatape","Menu Item Name":"Gorra Velmost","Date":"2026-04-15","SalesCount":1,"SalesTotal":47899.16,"GrossSales":47899.16},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Gorra Velmost","Date":"2026-04-21","SalesCount":1,"SalesTotal":47899.16,"GrossSales":47899.16},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Gorra Velmost","Date":"2026-05-20","SalesCount":1,"SalesTotal":47899.16,"GrossSales":37815.13},
-{"Location Name":"Viajero Guatape","Menu Item Name":"Gorra Velmost","Date":"2026-06-10","SalesCount":-1,"SalesTotal":-57000,"GrossSales":-57000},
+{"Location Name":"Viajero Guatape","Menu Item Name":"Gorra Velmost","Date":"2026-06-10","SalesCount":-1,"SalesTotal":-57000.0,"GrossSales":-57000.0},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Gorra Velmost","Date":"2026-07-18","SalesCount":3,"SalesTotal":143697.48,"GrossSales":143697.48},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Gorra Velmost","Date":"2026-08-07","SalesCount":1,"SalesTotal":47899.16,"GrossSales":37815.13},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Gorra Velmost","Date":"2026-08-15","SalesCount":1,"SalesTotal":47899.16,"GrossSales":47899.16},
@@ -483,9 +486,10 @@ const DAILY = [
 {"Location Name":"Viajero Guatape","Menu Item Name":"Toalla Velmost","Date":"2026-04-21","SalesCount":1,"SalesTotal":56302.52,"GrossSales":56302.52},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Toalla Velmost","Date":"2026-05-31","SalesCount":1,"SalesTotal":56302.52,"GrossSales":56302.52},
 {"Location Name":"Viajero Guatape","Menu Item Name":"Toalla Velmost","Date":"2026-06-03","SalesCount":1,"SalesTotal":56302.52,"GrossSales":56302.52},
-{"Location Name":"Viajero Guatape","Menu Item Name":"Toalla Velmost","Date":"2026-06-10","SalesCount":-1,"SalesTotal":-67000,"GrossSales":-67000},
+{"Location Name":"Viajero Guatape","Menu Item Name":"Toalla Velmost","Date":"2026-06-10","SalesCount":-1,"SalesTotal":-67000.0,"GrossSales":-67000.0},
 {"Location Name":"Viajero Medellin","Menu Item Name":"Buckethat","Date":"2026-04-21","SalesCount":1,"SalesTotal":44537.82,"GrossSales":44537.82},
 {"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-04-05","SalesCount":1,"SalesTotal":95798.32,"GrossSales":95798.32},
+{"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Manga Larga Velmost","Date":"2026-09-27","SalesCount":1,"SalesTotal":95798.32,"GrossSales":95798.32},
 {"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-04-04","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-04-14","SalesCount":2,"SalesTotal":169747.9,"GrossSales":169747.9},
 {"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-04-15","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
@@ -497,6 +501,7 @@ const DAILY = [
 {"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-07-12","SalesCount":1,"SalesTotal":84873.95,"GrossSales":67899.16},
 {"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-07-30","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-08-14","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
+{"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Pesada Velmost","Date":"2026-09-25","SalesCount":1,"SalesTotal":84873.95,"GrossSales":84873.95},
 {"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Sisa Velmost","Date":"2026-04-19","SalesCount":1,"SalesTotal":79831.93,"GrossSales":79831.93},
 {"Location Name":"Viajero Medellin","Menu Item Name":"Camiseta Sisa Velmost","Date":"2026-05-15","SalesCount":1,"SalesTotal":79831.93,"GrossSales":79831.93},
 {"Location Name":"Viajero Medellin","Menu Item Name":"Hoodie Velmost","Date":"2026-05-23","SalesCount":1,"SalesTotal":159663.87,"GrossSales":159663.87},
@@ -569,6 +574,7 @@ const DAILY = [
 {"Location Name":"Viajero Tayrona","Menu Item Name":"Camiseta Sisa Velmost","Date":"2026-08-30","SalesCount":1,"SalesTotal":79831.93,"GrossSales":79831.93},
 {"Location Name":"Viajero Tayrona","Menu Item Name":"Camiseta Sisa Velmost","Date":"2026-09-16","SalesCount":1,"SalesTotal":79831.93,"GrossSales":79831.93},
 {"Location Name":"Viajero Tayrona","Menu Item Name":"Camiseta Sisa Velmost","Date":"2026-09-20","SalesCount":1,"SalesTotal":79831.93,"GrossSales":79831.93},
+{"Location Name":"Viajero Tayrona","Menu Item Name":"Camiseta Sisa Velmost","Date":"2026-09-25","SalesCount":1,"SalesTotal":79831.93,"GrossSales":79831.93},
 {"Location Name":"Viajero Tayrona","Menu Item Name":"Gorra Velmost","Date":"2026-04-30","SalesCount":1,"SalesTotal":47899.16,"GrossSales":47899.16},
 {"Location Name":"Viajero Tayrona","Menu Item Name":"Gorra Velmost","Date":"2026-05-13","SalesCount":1,"SalesTotal":47899.16,"GrossSales":47899.16},
 {"Location Name":"Viajero Tayrona","Menu Item Name":"Gorra Velmost","Date":"2026-05-17","SalesCount":1,"SalesTotal":47899.16,"GrossSales":47899.16},
@@ -582,7 +588,7 @@ const DAILY = [
 {"Location Name":"Viajero Tayrona","Menu Item Name":"Toalla Velmost","Date":"2026-05-28","SalesCount":1,"SalesTotal":56302.52,"GrossSales":51222.6},
 {"Location Name":"Viajero Tayrona","Menu Item Name":"Toalla Velmost","Date":"2026-06-27","SalesCount":1,"SalesTotal":56302.52,"GrossSales":56302.52},
 {"Location Name":"Viajero Tayrona","Menu Item Name":"Toalla Velmost","Date":"2026-07-03","SalesCount":1,"SalesTotal":56302.52,"GrossSales":56302.52},
-{"Location Name":"Viajero Tayrona","Menu Item Name":"Toalla Velmost","Date":"2026-07-04","SalesCount":2,"SalesTotal":112605.04,"GrossSales":110825.72},
+{"Location Name":"Viajero Tayrona","Menu Item Name":"Toalla Velmost","Date":"2026-07-04","SalesCount":2,"SalesTotal":112605.04,"GrossSales":110825.72}
 ];
 
 const LOC_COLORS = {
